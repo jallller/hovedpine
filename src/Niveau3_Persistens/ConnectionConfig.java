@@ -16,9 +16,6 @@ public class ConnectionConfig {
         Connection connection = null;
         String url = "jdbc:mysql://localhost:3306/demodemo?serverTimezone=CET&useSSL=false";
 
-//        //Default;
-//        String user = "root";
-//        String password = "AskildogKonrad";
         try {
             connection = DriverManager.getConnection(url, user, password);
         } catch (Exception e) {
